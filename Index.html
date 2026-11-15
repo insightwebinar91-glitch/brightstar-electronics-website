@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="BrightStar Electronics - Explore electronics, gadgets and accessories."
+    />
+    <meta name="theme-color" content="#202020" />
+    <title>BrightStar Electronics | Shop Gadgets</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container nav-container">
+        <a href="#" class="logo">
+          <span class="logo-mark">B</span>
+          <span>BrightStar<span class="logo-orange">.</span></span>
+        </a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Open menu">
+          ☰
+        </button>
+
+        <nav class="navigation" id="navigation">
+          <a href="#home">Home</a>
+          <a href="#products">Products</a>
+          <a href="#about">About</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" id="openCart">
+          🛒 Cart <span id="cartCount">0</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO -->
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="eyebrow">TECHNOLOGY FOR EVERYDAY LIFE</span>
+            <h1>Upgrade Your World With <span>Smart Technology.</span></h1>
+            <p>
+              Discover electronics, accessories and everyday gadgets designed to
+              keep you connected and productive.
+            </p>
+            <a href="#products" class="primary-button"> Explore Products → </a>
+            <div class="hero-trust">
+              <span>✓ Quality-focused selection</span>
+              <span>✓ Helpful customer support</span>
+            </div>
+          </div>
+
+          <div class="hero-image">
+            <img
+              src="https://images.unsplash.com/photo-1498049794561-7780e7231661?w=1000&auto=format&fit=crop&q=80"
+              alt="Modern electronic devices displayed on a desk"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- BENEFITS -->
+      <section class="benefits">
+        <div class="container benefits-grid">
+          <div class="benefit">
+            <span>✦</span>
+            <div>
+              <strong>Quality Selection</strong>
+              <small>Carefully selected products</small>
+            </div>
+          </div>
+          <div class="benefit">
+            <span>↗</span>
+            <div>
+              <strong>Modern Technology</strong>
+              <small>Explore useful gadgets</small>
+            </div>
+          </div>
+          <div class="benefit">
+            <span>☎</span>
+            <div>
+              <strong>Customer Support</strong>
+              <small>Get help with enquiries</small>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRODUCTS -->
+      <section class="products-section" id="products">
+        <div class="container">
+          <div class="section-heading">
+            <div>
+              <span class="eyebrow">OUR COLLECTION</span>
+              <h2>Explore Our Products</h2>
+              <p>Browse our featured electronics and accessories.</p>
+            </div>
+          </div>
+
+          <div class="product-tools">
+            <div class="categories" id="categories">
+              <button class="category active" data-category="All">All</button>
+              <button class="category" data-category="Phones">Phones</button>
+              <button class="category" data-category="Computers">
+                Computers
+              </button>
+              <button class="category" data-category="Audio">Audio</button>
+              <button class="category" data-category="Accessories">
+                Accessories
+              </button>
+            </div>
+
+            <input
+              type="search"
+              id="productSearch"
+              class="search-box"
+              placeholder="Search products..."
+              aria-label="Search products"
+            />
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+
+          <p class="demo-note">
+            Demonstration catalogue: product names, prices and availability are
+            sample information.
+          </p>
+        </div>
+      </section>
+
+      <!-- ABOUT -->
+      <section class="about-section" id="about">
+        <div class="container about-grid">
+          <div class="about-image">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?w=900&auto=format&fit=crop&q=80"
+              alt="People working with technology in a modern workspace"
+              loading="lazy"
+            />
+          </div>
+
+          <div class="about-text">
+            <span class="eyebrow">ABOUT BRIGHTSTAR</span>
+            <h2>Technology That Makes Life Easier.</h2>
+            <p>
+              BrightStar Electronics is a demonstration online store concept
+              designed to make browsing electronics simple. Customers can
+              explore product categories, search the catalogue and prepare
+              enquiries.
+            </p>
+            <a href="#contact" class="outline-button">Contact Us</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- CONTACT -->
+      <section class="contact-section" id="contact">
+        <div class="container contact-box">
+          <div>
+            <span class="eyebrow">NEED ASSISTANCE?</span>
+            <h2>Have a Product Enquiry?</h2>
+            <p>
+              Contact us to ask about a product in our demonstration catalogue.
+            </p>
+          </div>
+
+          <a
+            href="https://wa.me/254753420644?text=Hello%20BrightStar%2C%20I%20have%20a%20product%20enquiry."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="primary-button"
+          >
+            WhatsApp Enquiry
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <!-- CART DRAWER -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-drawer" id="cartDrawer" aria-label="Shopping cart">
+      <div class="cart-heading">
+        <div>
+          <h2>Your Cart</h2>
+          <p>Review your selected products.</p>
+        </div>
+        <button id="closeCart" class="close-cart" aria-label="Close cart">
+          ×
+        </button>
+      </div>
+
+      <div class="cart-items" id="cartItems">
+        <p class="empty-cart">Your cart is currently empty.</p>
+      </div>
+
+      <div class="cart-footer">
+        <div class="cart-total">
+          <strong>Estimated total</strong>
+          <strong id="cartTotal">KSh 0</strong>
+        </div>
+        <button class="checkout-button" id="enquiryButton">
+          Prepare Enquiry
+        </button>
+        <small>This demo does not accept payments or place orders.</small>
+      </div>
+    </aside>
+
+    <footer class="footer">
+      <div class="container footer-content">
+        <a href="#" class="logo footer-logo">
+          <span class="logo-mark">B</span>
+          <span>BrightStar<span class="logo-orange">.</span></span>
+        </a>
+        <p>© <span id="year"></span> BrightStar Electronics. Demo project.</p>
+        <a href="#home">Back to top ↑</a>
+      </div>
+    </footer>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
