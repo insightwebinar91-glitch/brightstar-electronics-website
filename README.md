@@ -36,7 +36,7 @@ Developer
 
 John Wainaina
 
-Portfolio: https://insighhtwebinar91.netlify.app
+Portfolio: https://johnwainaina-portfolio.netlify.app/
 
 GitHub: https://github.com/insightwebinar91-glitch
 
